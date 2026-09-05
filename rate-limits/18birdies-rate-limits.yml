@@ -1,0 +1,16 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  https://18birdies.com/ (site walk), https://help.18birdies.com/ (knowledge base),
+  https://api.18birdies.com/ (live probe), 2026-09-05
+limit_count: 0
+limits: []
+headers: []
+note: >-
+  An honest zero. 18Birdies publishes no API and therefore no rate limits: there is no
+  developer portal, no API reference and no terms of programmatic use anywhere on
+  18birdies.com or in the Help Scout knowledge base. The mobile app backend at
+  api.18birdies.com is private — GET / returns HTTP 403 and every documented discovery path
+  returns 404 — so no rate-limit response headers could be observed on an unauthenticated
+  request either. Nothing here is derived or assumed; this records that the search was run
+  and found nothing published.

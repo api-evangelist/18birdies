@@ -1,0 +1,29 @@
+generated: '2026-09-05'
+method: searched
+source: >-
+  npm registry search, PyPI, RubyGems, crates.io, pkg.go.dev, Packagist, Maven Central and
+  the github.com/18Birdies organization, 2026-09-05
+package_count: 0
+official_sdk_count: 0
+packages: []
+note: >-
+  18Birdies publishes no first-party client libraries. The registry sweep found nothing:
+  registry.npmjs.org search for "18birdies" returns 0 results; pypi.org/pypi/18birdies/json
+  and rubygems.org/api/v1/gems/18birdies.json both 404. The company's GitHub organization
+  (github.com/18Birdies, created 2016-12-14, "Golf Technology Platform") exists and returns
+  HTTP 200 but has 0 public repositories. Every "18birdies" repository on GitHub is
+  third-party — fan projects, scrapers and clones — and none is a first-party SDK. No SDKs
+  pointer is emitted, because there is no official client library to count.
+searched:
+- registry: npm
+  query: https://registry.npmjs.org/-/v1/search?text=18birdies
+  result: 0 packages
+- registry: pypi
+  query: https://pypi.org/pypi/18birdies/json
+  result: 404
+- registry: rubygems
+  query: https://rubygems.org/api/v1/gems/18birdies.json
+  result: 404
+- registry: github
+  query: https://api.github.com/orgs/18Birdies/repos
+  result: 0 public repositories

@@ -1,0 +1,151 @@
+generated: '2026-09-05'
+method: probed
+source: live GET probes, 2026-09-05
+note: >-
+  Every named /.well-known/ path plus the APIs.json root paths were probed on all four hosts
+  the record knows: the registrable domain, www, the mobile app backend api.18birdies.com,
+  and the Help Scout-hosted knowledge base help.18birdies.com. NOTHING WAS SERVED — every
+  path returned 404 (or, on www, a 301 to the apex, which was probed directly). No WellKnown
+  and no SecurityTxt pointer is emitted, because this file documents an absence, not a
+  presence. All four hosts return honest 404s: the negative-control path 404s everywhere and
+  no host echoes the requested path back as a document, so these are true misses rather than
+  a catch-all masking a real surface.
+hit_count: 0
+path_echo_control: passed
+hosts:
+- host: https://18birdies.com
+  path_echo_control:
+    path: /.well-known/18birdies-negative-control-7f3ab91c.json
+    status: 404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null
+- host: https://www.18birdies.com
+  note: every path 301-redirects to the apex host, which was probed directly
+  path_echo_control:
+    path: /.well-known/18birdies-negative-control-7f3ab91c.json
+    status: 301
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 301
+    file: null
+  - path: /.well-known/agent.json
+    status: 301
+    file: null
+  - path: /.well-known/apis.json
+    status: 301
+    file: null
+  - path: /apis.json
+    status: 301
+    file: null
+- host: https://api.18birdies.com
+  note: >-
+    Private mobile-app backend. GET / returns 403 (Jetty error page); every discovery path
+    returns a Jetty 404.
+  path_echo_control:
+    path: /.well-known/18birdies-negative-control-7f3ab91c.json
+    status: 404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/aauth-resource.json
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /apis.yml
+    status: 404
+    file: null
+- host: https://help.18birdies.com
+  note: Help Scout Docs-hosted consumer knowledge base
+  path_echo_control:
+    path: /.well-known/18birdies-negative-control-7f3ab91c.json
+    status: 404
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+  - path: /.well-known/apis.json
+    status: 404
+    file: null
+  - path: /apis.json
+    status: 404
+    file: null
+  - path: /llms.txt
+    status: 404
+    file: null

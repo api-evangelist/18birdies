@@ -1,0 +1,33 @@
+generated: '2026-09-05'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml hosts + the app backend host api.18birdies.com
+note: >-
+  Baseline written by 0-working/probe-domain-security.py, then extended by hand with two
+  probes the script did not cover: the SPF record (the script recorded spf: false, but
+  `dig +short 18birdies.com TXT` returns a v=spf1 record — corrected below), and the mobile
+  app backend host api.18birdies.com, which is not in apis.yml because 18Birdies publishes
+  no API and so has no apis[] entry.
+hosts:
+- host: 18birdies.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 26 12:56:59 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: api.18birdies.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan  9 23:59:59 2027 GMT
+  hsts: false
+  hsts_max_age: null
+  note: >-
+    Private mobile-app backend behind an AWS ELB. GET / returns HTTP 403 (Jetty); every
+    documented discovery path returns 404. Not a published API surface.
+domains:
+- domain: 18birdies.com
+  dnssec: false
+  caa: []
+  spf: true
+  spf_record: v=spf1 include:servers.mcsv.net include:_spf.google.com include:mailgun.org ?all
+  dmarc: true
+  dmarc_policy: none

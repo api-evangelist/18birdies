@@ -64,5 +64,10 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-18Birdies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+18Birdies is a golf technology company behind the 18Birdies mobile app — a golf GPS rangefinder, digital scorecard, shot- and stat-tracking platform and social network for golfers, founded in 2014. It combines course imagery and elevation with hole-by-hole GPS distances, 3D green maps, wind and slope adjustment, club recommendations, strokes-gained analytics, an AI Swing Analyzer, handicap tracking, side games and tournament/league management. It sells a freemium consumer subscription with Apple Watch and Wear OS companions.
+
+**No public API.** As of 2026-09-05, 18Birdies publishes no developer portal, no API reference, no SDK, no webhook catalog and no machine-readable contract of any kind. It runs a production backend at `api.18birdies.com` for its own mobile clients; that host returns HTTP 403 at the root and 404 on every OpenAPI, Swagger, GraphQL and `/.well-known/` discovery path, and is not a published API surface. Third-party pages advertising an "18Birdies API" are other vendors' marketing copy, not first-party documentation.
+
+- https://18birdies.com/
+- https://help.18birdies.com/
+- https://github.com/18Birdies

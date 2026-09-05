@@ -1,17 +1,36 @@
 aid: 18birdies
 name: 18Birdies
-description: '18Birdies is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  18Birdies is a golf technology company behind the 18Birdies mobile app — a golf GPS
+  rangefinder, digital scorecard, shot- and stat-tracking platform and social network for
+  golfers, founded in 2014. The app combines Google Maps-derived course imagery and elevation
+  with hole-by-hole GPS distances, 3D green maps, wind and slope adjustment, club
+  recommendations, strokes-gained analytics, an AI Swing Analyzer, handicap tracking, side
+  games and tournament/league management across a worldwide golf course database. It operates
+  a freemium consumer subscription (a free tier plus Premium) with companion Apple Watch and
+  Wear OS experiences. 18Birdies runs a production backend at api.18birdies.com that serves
+  its own mobile clients, but as of this profiling pass it publishes no public developer
+  program, no API reference, and no machine-readable contract.
+image: https://18birdies.com/public-images/apple-touch-icon.png
 url: https://raw.githubusercontent.com/api-evangelist/18birdies/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-09-05'
 modified: '2026-09-05'
 tags:
-- Company
+- Golf
+- Sports
+- Mobile Applications
+- Location
+- Geolocation
+- Mapping
+- Consumer
+- Fitness
+- Social
+- Analytics
+- Tournaments
+- Subscriptions
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,68 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  name: 18Birdies
+  url: https://18birdies.com/
+- type: Support
+  name: 18Birdies Knowledge Base
+  url: https://help.18birdies.com/
+- type: Blog
+  name: 18Birdies Clubhouse
+  url: https://18birdies.com/clubhouse/
+- type: Pricing
+  name: 18Birdies Premium
+  url: https://18birdies.com/premium/
+- type: SignUp
+  name: Get the App
+  url: https://18birdies.com/install/
+- type: TermsOfService
+  name: Terms of Service
+  url: https://18birdies.com/legal/terms/
+- type: PrivacyPolicy
+  name: Privacy Policy
+  url: https://18birdies.com/legal/privacy-policy/
+- type: GitHubOrganization
+  name: 18Birdies on GitHub
+  url: https://github.com/18Birdies
+- type: Plans
+  name: Subscription plans
+  url: plans/18birdies-plans-pricing.yml
+- type: RateLimits
+  name: Rate limits
+  url: rate-limits/18birdies-rate-limits.yml
+- type: Packages
+  name: Client packages
+  url: packages/18birdies-packages.yml
+- type: DomainSecurity
+  name: Domain security posture
+  url: security/18birdies-domain-security.yml
+- type: LLMsTxt
+  name: llms.txt
+  url: llms/18birdies-llms.txt
+x-enrichment:
+  date: '2026-09-05'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    18Birdies ships only an end-user golf app — its site has no /developers, /developer,
+    /api or /docs page (all 404), its Help Scout knowledge base has no API or integration
+    category, and the mobile backend at api.18birdies.com answers 403 at the root and 404
+    on every OpenAPI, Swagger, GraphQL and .well-known discovery path.
+  evidence:
+  - url: https://18birdies.com/developers
+    status: 404
+  - url: https://18birdies.com/llms.txt
+    status: 404
+  - url: https://api.18birdies.com/openapi.json
+    status: 404
+  - url: https://api.18birdies.com/graphql
+    status: 404
+  - url: https://api.18birdies.com/
+    status: 403
+  - url: https://18birdies.com/.well-known/api-catalog
+    status: 404
+  checked: '2026-09-05'

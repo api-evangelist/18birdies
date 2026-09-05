@@ -1,0 +1,50 @@
+generated: '2026-09-05'
+method: searched
+source: https://18birdies.com/premium/
+plan_count: 4
+scope: consumer-subscription
+note: >-
+  IMPORTANT — these are CONSUMER APP SUBSCRIPTION tiers, not API plans. 18Birdies publishes
+  no API, no developer plan and no API entitlement of any kind; none of the tiers below
+  grants programmatic access. They are recorded because /premium/ is the company's real,
+  published pricing page and the Pricing pointer in apis.yml resolves to it. Prices are the
+  US web-listed rates as of 2026-09-05; App Store / Google Play in-app pricing may differ by
+  store and region.
+currency: USD
+plans:
+- name: Free
+  price: 0
+  currency: USD
+  period: null
+  included: >-
+    Scoring, stat tracking, shot tracking, targets, multi-player scoring, side games, notes,
+    low battery mode, tournaments, Apple Watch integration and social/community features.
+  api_access: false
+- name: Premium Weekly
+  price: 7.99
+  currency: USD
+  period: week
+  trial: none
+  included: Full access to all Premium features; no free trial.
+  api_access: false
+- name: Premium Monthly
+  price: 19.99
+  currency: USD
+  period: month
+  trial: 7-day free trial
+  included: Full access to all Premium features, month-to-month.
+  api_access: false
+- name: Premium Yearly
+  price: 99.99
+  currency: USD
+  period: year
+  trial: 7-day free trial
+  billed_as: Best Value — the page states it saves over 55% vs. monthly
+  included: >-
+    All Premium features — wind and slope adjustment, AI Swing Analyzer, advanced statistics,
+    3D green maps, club recommendations, course strategy, pro tips and strokes-gained scoring.
+  api_access: false
+overage: null
+enterprise: >-
+  The pricing page publishes no business, course-operator or partner tier and no
+  contact-sales path for API or data access.
