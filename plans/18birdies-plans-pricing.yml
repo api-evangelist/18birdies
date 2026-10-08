@@ -48,3 +48,38 @@ overage: null
 enterprise: >-
   The pricing page publishes no business, course-operator or partner tier and no
   contact-sales path for API or data access.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - subscription
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Premium Weekly
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - week
+  - name: Premium Monthly
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Premium Yearly
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods:
+    - year
