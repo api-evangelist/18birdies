@@ -64,10 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-18Birdies is a golf technology company behind the 18Birdies mobile app — a golf GPS rangefinder, digital scorecard, shot- and stat-tracking platform and social network for golfers, founded in 2014. It combines course imagery and elevation with hole-by-hole GPS distances, 3D green maps, wind and slope adjustment, club recommendations, strokes-gained analytics, an AI Swing Analyzer, handicap tracking, side games and tournament/league management. It sells a freemium consumer subscription with Apple Watch and Wear OS companions.
+18Birdies is a golf technology company behind the 18Birdies mobile app — a golf GPS rangefinder, digital scorecard, shot- and stat-tracking platform and social network for golfers, founded in 2014. The app combines Google Maps-derived course imagery and elevation with hole-by-hole GPS distances, 3D green maps, wind and slope adjustment, club recommendations, strokes-gained analytics, an AI Swing Analyzer, handicap tracking, side games and tournament/league management across a worldwide golf course database. It operates a freemium consumer subscription (a free tier plus Premium) with companion Apple Watch and Wear OS experiences. 18Birdies runs a production backend at api.18birdies.com that serves its own mobile clients, but as of this profiling pass it publishes no public developer program, no API reference, and no machine-readable contract.
 
-**No public API.** As of 2026-09-05, 18Birdies publishes no developer portal, no API reference, no SDK, no webhook catalog and no machine-readable contract of any kind. It runs a production backend at `api.18birdies.com` for its own mobile clients; that host returns HTTP 403 at the root and 404 on every OpenAPI, Swagger, GraphQL and `/.well-known/` discovery path, and is not a published API surface. Third-party pages advertising an "18Birdies API" are other vendors' marketing copy, not first-party documentation.
+**Areas:** Golf · Sports · Mobile App · Location · Geolocation · Mapping · Consumer · Fitness · Social · Analytics · Tournaments · Subscription
 
-- https://18birdies.com/
-- https://help.18birdies.com/
-- https://github.com/18Birdies
+## 18Birdies on APIs.io
+
+Everything profiled for 18Birdies is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/18birdies/](https://apis.io/providers/18birdies/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [18Birdies Domain Security](https://apis.io/security/18birdies/18birdies-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [18Birdies Plans Pricing](https://apis.io/plans/18birdies/18birdies-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [18Birdies Rate Limits](https://apis.io/rate-limits/18birdies/18birdies-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://18birdies.com/)
+- [Pricing](https://18birdies.com/premium/)
+- [Sign up](https://18birdies.com/install/)
+- [Support](https://help.18birdies.com/)
+- [Blog](https://18birdies.com/clubhouse/)
+- [Terms of service](https://18birdies.com/legal/terms/)
+- [Privacy policy](https://18birdies.com/legal/privacy-policy/)
+- [GitHub](https://github.com/18Birdies)
+
+## API Evangelist rating
+
+**Kin Score 22.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 76.3 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/18birdies/](https://apis.io/providers/18birdies/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 18Birdies: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/18birdies/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
